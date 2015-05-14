@@ -1,0 +1,32 @@
+<html>
+<head>
+<title></title>
+<script type="text/javascript" src="dojoquery.js"></script>
+<script type="text/javascript">
+
+	window.onload=function(){
+
+		$dojo('donkey').hover(function(){
+			$dojo('two').insert("HI");
+		},
+		function(){
+			$dojo('two').insert("BYE");
+		})
+
+
+		$dojo('donkey').click(function(){
+			$dojo('three').css('color','red');
+			$dojo('three').css('font-size','20px');
+			$dojo('three').insert('DUDE')
+		})
+	}	
+	
+</script>
+</head>
+<body>
+	<button id="donkey">jk</button>
+	<div id="two"></div>
+	<div id="three"></div>
+
+</body>
+</html>
